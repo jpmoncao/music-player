@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --bg-color: #0F0D13;
+    --main-color: #2A2141;
+    --white-color: #e1e1e6;
+    --default-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    top: -50%;
+    transform: translateY(20%);
+}
+
+section>article {
+    height: 500px;
+    max-height: 520px;
+    width: 400px;
+    max-width: 450px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+section>article>img {
+    max-height: 180px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.heading h1 {
+    font: normal bold 1.5em var(--default-font);
+    line-height: 100%;
+    color: var(--white-color);
+}
+
+.heading h2 {
+    font: normal normal 1.1em var(--default-font);
+    line-height: 100%;
+    color: var(--white-color);
+    opacity: 0.67;
+}
+
+.controllers {
+    margin-bottom: -16px;
+    display: flex;
+    gap: 24px;
+}
+
+.controllers img {
+    animation-duration: 0.5s;
+}
+
+.controllers img:hover {
+    opacity: 0.7;
+}
+
+.controllers img:active {
+    transform: translateY(-3px);
+}
+
+.time-indicator input {
+    color: red;
+}
+
+.time-indicator div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-indicator div span {
+    font: normal normal 0.8em var(--default-font);
+    color: var(--white-color);
+    line-height: 160%;
+    opacity: 0.67;
+}
